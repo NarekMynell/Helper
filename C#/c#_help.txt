@@ -1,0 +1,185 @@
+IL code                   ------------- c# -y nax targmanvuma IL codi heto nor binaryi
+object                    ------------- bolor tipery jarangvac en ogject classic
+double.IsInfinity(a)      ------------- stuguma a-n anverjia dzgtum te che, or` double a = 1.0 / 0.0
+double.IsNaN(b)           ------------- stuguma b-n tiva te che, or` double b = 0.0 / 0.0
+decimal myVar             ------------- tvayin ketikov tipa, bayc i tarberutyun doublei u floati, misht exceptiona qcum // himnakanum ogtagorcvuma finansakan hashvarknerum
+Guid myID                 ------------- generacnuma specifik ID // ogtagorcvuma himnakanum classi dataMamber
+sealed                    ------------- classic araj grum eng vor iranic jarangel chlini
+partial                   ------------- classic araj grum enq u karanq mi classy bajanel 2 masi` data mambernern u constructornern yev myus metodnery
+abstract                  ------------- abstract classi exempliar chenq kara sarqenq, ayn herarchyi hamara
+
+static
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+static classi exempiar chenq kara sarqenq // static classi bolor mambernery piti static linen
+static metodnery u dataMembernery chen patkanum classi obyektnerin, ayl patkanum en miayn classin
+static metodnery che karox voch statik andamnerin dimen
+static constructory chuni voch modifikator, voch el parametr u kanchvuma 1 angam` arajin angam et classi het inj vor mi dzev arnchutyun unenalu depqum. kanchvuma ameninjic araj
+
+converting
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+______explicit__bacahayt__
+float b = (float)a 
+int.TryParse(str, out int result) // stringy darcnuma int, u daye yete stringi mej tver chkan resultin partadir mi int talua
+bool b = Convert.ToBoolean(a) 
+______implicit__voch bacahayt__
+float sum = intValue + floatValue // intValue popoxakany voch bacahayt converta linum floati
+
+// floati jamanak kara keti xndir lini, u vor hamozvac linenq vor henc ketov khaskana voch te storaketov, petqa`
+CultureInfo ci = (CultureInfo)CultureInfo.CurrentCulture.Clone();
+ci.NumberFormat.CurrencyDecimalSeparator = ".";
+myFloat = float.Parse("0.0",NumberStyles.Any,ci);
+
+exceptions
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+vs studioum goyutyun uni mi setting, vorov voroshum enq tipi arjeqneri diapazonic durs galuc exception qci te che // right click in solution + build + "check for aritmetic overflov/underflov"
+byte a = 255;
+checked(a++); //  kqci eception       //
+unchecked(a++); // chi qci exception  // ays yerkusn el ogtagorcum enq et settingi poxren, vor amboxj proektin chverabervi ; yete mekic avel stugelu ban ka` checked{...}
+
+array        
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+using System.Linq;
+// kstexci arr masivn 7 erkarutyamb u bolor elementnerin kta 5
+int []arr = Enumerable.Repeat(5, 7).ToArray();
+// kstexci arr masivn 7 erkarutyamb u kta arjeqner 5-ic sksac
+int []arr = Enumerable.Range(5, 7).ToArray();
+___________________________________________________________________________________________________________________________________________________________________________
+using System.Linq
+myArr.Max() //...
+myArr.Sum() //...
+myArr.Where(i => i % 2 == 0) // kta zuyg elementnery
+int[] b = a.Distinct().ToArray() // kstexci b zangvacy a zangvaci chkrknvox elementneric
+int[] b = a.OrderBy(i => i).ToArray() // b-n kstexci a-i mecacox sortavorvacy
+int[] b = a.OrderByDescending(i => i).ToArray() // b-n kstexci a-i poqracox sortavorvacy
+int[] result = myArr.Where(i => i < 70).ToArray() // yete mi element enq uzum .Toarray()-i texy grum enq .First()
+___________________________________________________________________________________________________________________________________________________________________________
+Array.Sort(myArray)
+Array.Find(myArray, i => i < 70) // kta 70-ic poqr arajin elementy
+Array.Find(myArray, i => i < 70) // verevinica. prosty verjica sksum pntrel
+Array.FindAll(myArray, i => i < 70) // kta bavararox bolor elementnery
+Array.FindIndex(myArray, i => i == 43) // kta arajin patahaci indexy (-1, yete chka)
+Array.Reverse(myArray) // kshrji zangvac
+Array.Resize(ref myArr, newSize) // kpoxi chapy, hni elementnern el skzbic kshari
+___________________________________________________________________________________________________________________________________________________________________________
+// c# version 8+ // gorcuma nayev stringneri hamar
+myArr[^3] // kta verjic 3-rd elementy // karanq nayev senc grenq` Index myIndex = ^3; myArr[myIndex]
+int arr2[] = arr1[1..4] // kstexci arr2-y arr1-i 1-4 elementneric // nayev karanq grenq "[..4]", "[1..]" // karanq nayev grenq` myrange = 1..4; int arr2[] = arr1[myrange]
+___________________________________________________________________________________________________________________________________________________________________________
+myarr.Rank // kasi te qani chapani masiva
+myArr.GetLenght(k) // kta k-rd arancqi yerkarutyuny
+
+Random
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+Random random = new Random();
+int k = random.Next();
+
+value and referance types
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+// value // bolor value typery jarangvac en System.ValueType-ic
+enum
+struct
+// referance //
+all other types
+all arrays // qani vor bolor masivnery jarangvac en Array classic
+
+null
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+String s = myStr ?? "no data" // yete myStringy NULL-a apa s-in kta defoult tvac arjeqy, isk myStry kmna NULL
+String s = myStr ??= "no data" // nuyn verevinna, prosty myStrinela veragrelu "no data"
+str ??= "defoult string" // yete str-y NULLa apa kta sa, yete che uremn ban chi ani
+int k = myArr?.Sum() // kstugi yete myArry NULL lini, apa ketic heto kody chi katarvi, u amboxj e artahaytutyuny klini NULL
+string phoneNumber = Person?.Contacts.?Phonenumber ?? "no data" // haskaci inqd
+
+nullable
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+int? i = null; senc karanq value typerin el null tanq // partadir chi henc skzbic null tanq :)
+i.HasValue // null haytararac popoxakani hamar stuguma arjeq uni te nulla
+i.Value // null haytararac popoxakani hamar vercnuma arjeqy, yete null exav exception kqci
+var v = (i ?? 43) // yete i-n null lini apa kveragri 43 
+
+ref
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+void Foo(ref int a) { a = 10;} // senc argumenty by referance kpoxancvi // funkcian kancheluc nuynpes piti grenq ref` Foo(ref myVar)
+___________________________________________________________________________________________________________________________________________________________________________
+// Bar funkcian kancheluc heto mievnuyna ayn null chi darna, chnayac vor referance typea, u chi darna qani vor ssilken qopia linum :), yete uzum enq poxvi piti "ref" grenq
+static void Bar(int[] arr) { arr = null }
+static void Main(string[] args) { int[] myArray = {1,2,3}; Bar(myArray)} 
+___________________________________________________________________________________________________________________________________________________________________________
+// shnoriv refi arr[0]-n kdarna -5 // karanq nayev senc ban grenq "return ref myResult"
+int[] arr = {1, 2, 3};
+ref int b = ref arr[0];
+b = -5
+___________________________________________________________________________________________________________________________________________________________________________
+
+out
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+tarberutyuny ref-ic naya vor out-ov tvac popoxakanin partavor enq inch vor arjeq veragrenq, sra lavn ena vor karanq aranc skzbnarjeqavorel popoxakanin tanq vorpes funkciayi argument
+Foo(out int a) // karanq senc miangamic funkciayi kanchi mej haytararenq argument-popoxakany, u daje sranic heto kodum ayn unenanq :)
+
+in
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+void Foo(in int value) // eli ref-i nmana prosto stex el funkciayi mej valuen chenq kara poxenq` readonlia
+
+params
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+int Sum(params int[] arr)
+{ gumarum; return; }
+main()
+{int a = Sum(1,5,7)} // toist param-ov vor tanq qani hat int tipi argument uzenq karanq tanq, inqy convert kani arrayi u bla bla // yete funkcian ayl argument el uni, apa piti da skzbic tanq
+
+anvanakan argumentner
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+void Foo(int a, int b, bool q = true) { ... }
+main{
+int v1 = 12, v2 = 43;
+Foo(a:v1, b:v2);
+Foo(b:8, a:v2, q:false);
+Foo(v1, v2, q:false);
+} // aysenc dzevorov karanq kanchenq
+
+var
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+var a = new { Name = "Ando", Aga = 43}; // senc avtomat tipa sarqum aranc classi :)
+var result = from i in myArray where i > 15 select i; // resultin kveragri myArrayi 15ic mec bolor elementnery
+var result = from i in myArray where i > 15 orderby i select i; // verevinica prosto sortavorvaca
+var-y chi karox funkciayi argumenti voroshich lini
+
+enum
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+enum DayOfWeek : byte { ... } // yete chgrenq ": byte", apa tipy defoult inta
+
+class
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+ctor                      ------------- vs studioum grum es ctor u aftomat classi constructora sarqum
+propfull                  ------------- grum enq u aftomat data mambera stexcum ira yndlaynvac setov u getov
+prop                      ------------- kstexci data mambern ira geti u seti karj dzev 
+___________________________________________________________________________________________________________________________________________________________________________
+private int y
+public int Y
+{
+get{return y;}
+set{y = value;} // karanq sranc demic private grenq, vor metodnery karanan ogtagorcen, isk drsic che, vor specific depqerum incapsulacian chxaxtvi
+}
+// seti u geti dzevy // yete orinak inch vor ogranichenia unenq seti kam geti logikayi mej, apa constructrnerum karanq "y = myVar" - i poxaren grenq "Y = myVar" :) 
+ 
+___________________________________________________________________________________________________________________________________________________________________________
+public int Y {get; set;} // karj dzevy
+___________________________________________________________________________________________________________________________________________________________________________
+
+extension
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+//yete uzum enq goyutyun unecox classi (orinak DataTime) hamar avelacnel nor metod, apa mer classi mej grum enq hetevyaly // piti nuyn namespaceum linen extension metody u ira kanchy
+static class MyExtension
+{
+  public static void Print(this DataTime dataTime) // sranic heto karanq ayl parametrer el avelacnenq
+  {
+    Console.WriteLine(dataTime;)
+  }
+}
+// u arden kancheluc karanq grenq "myDataTimeObject.Print()"
+
+
+
+String
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+display.SetText("FPS\n{0:0}\n000\n000", 1f / var---- TextMeshProUGUI tipi display-i textum vorpes 0-rd popoxakan kgri float tipi 1 / var arjeqy storaketic heto 0 tvi chshtutyamb

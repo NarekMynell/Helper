@@ -1,0 +1,142 @@
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+# strings
+a, b = str.split(':') # kbajani :-ov , or str == 'ddf:fd4' (a="ddf", b=="fd4")
+
+	with open("C:\\Users\\narek\\Desktop\\armenian_girls_names.txt", "r") as f:  //with_y miangamic pakuma fayly kodi ashxatanqic heto
+	   for line in f:
+	       print (line)
+	       if 'elly' in line: // yete et barin handipec durs khelni
+	          break
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+    
+# tabs handle
+
+	import selenium.webdriver.support.ui as ui
+	from selenium.webdriver.common.keys import Keys
+	from time import sleep    
+
+	driver = webdriver.Firefox()
+	driver.get('https://www.instagram.com')
+	driver.execute_script("window.open('https://www.google.com?q=python#q=python');")
+	driver.switch_to.window(driver.window_handles[1])
+	driver.switch_to.window(driver.window_handles[0])
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+# for loopi orinak yev popoxakan stringi mej
+
+	for x in range(22, 6000):
+	    aa = str(x)
+	    t = '//*[@id="results"]/div[{}]/div[3]/div[1]/a'.format(aa)
+	    print(t)
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+# windows handle
+
+window_before = driver.window_handles[0]
+window_after = driver.window_handles[1]
+driver.switch_to_window(window_after)
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+# nkar save anelu hamar 
+
+	import urllib
+
+	urllib.request.urlretrieve("download_url", "save_path")
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+# webitemnern unen css propertyner, or. urly stanalu hamar
+
+	item.value_of_css_property("background-image")
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+# kta parent webitemy
+	a.find_element_by_xpath('..')
+# kpntri webelementy yst miji texti (yete chgtni el, exception chi shprti, ayl listy kunena 0 lenght)
+driver.find_elements_by_xpath("//*[contains(text(), 'myText')]")
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+# interi listi stacum stringic
+
+	x = map(int, re.findall(r'\d+', link))
+	numbers = list(x)
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+# kktri stringy
+
+	url = uncorrect_url[2 : 3]
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+# bacvox patuhany scroll anelu hamar.
+
+	//gtnum enq bacvac patuhany, en masy vor scrolli gciknela yndgrkum
+	driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight/%s' %6, element)  // 6% aysinqn 1/6_rd masov
+	//kam el cikli mej karanq grenq nerqohishyaly
+	driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight', element)
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+# kan bacvox patuhanner(ayt tvum allertner), voronq karavarelu hamr petqa`
+	main_window_handle = None   // glxavor patuhany
+   	while not main_window_handle:
+        		main_window_handle = driver.current_window_handle  // veragrum enq yntaciq patuhany
+	... // yerb arden bacvec myus patuhany
+	signin_window_handle = None
+	while not signin_window_handle:
+    		for handle in driver.window_handles:
+        		if handle != main_window_handle:
+            			signin_window_handle = handle
+            			break
+	driver.switch_to.window(signin_window_handle)
+	driver.switch_to_default_content() // glxavor patuhanin nayev senc karanq het gnanq
+	
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+# unicode ogtagorcelu hamar petqa funkciayin avelacnel 3-rd argumenty
+
+bio = '•#catlover🐱'
+f= open("C:\\Users\\narek\\Desktop\\guru99.txt","w+",encoding='utf-8')
+f.write(bio)
+f.close()
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+# captchai decoding with tesseract program
+
+from PIL import Image
+import pytesseract as tess
+tess.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+img = Image.open('C:\\Users\\narek\\Downloads\\captcha.png')
+text = tess.image_to_string(img)
+print(text)
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+# right click
+
+# action chain object creation
+action = ActionChains(driver)
+# right click operation and then perform
+action.context_click(myItem).perform()
+
+]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+# IMAGE PROCESSING
+
+from PIL import Image
+from PIL._imaging import display
+
+im = image.open('...')
+im = im.convert("P") # kstexci list, vori amen elementy cuyc kta hertakan guyni qani pixel ka
+im.show()
+im.save('...')
+im.size()  # create list im.size[0] and im.size[1]
+pixels = im.load() # creates the pixel map
+im.getpixel((5,7))
+im1 = copy.copy(im2) # by value veragrum kani (import copy)
+im1 = Image.new('RGB', (40,80), (256,256,256)) # kstexci RGB tipi nkar spitak guyni 40x80 chapi

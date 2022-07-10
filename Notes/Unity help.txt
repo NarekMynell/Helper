@@ -1,0 +1,237 @@
+Build
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+yete miangamic heraxosi mej build chi linum 
+				apa petqa edit -> preferences -> external tools bajnic androidi recomendet sdk-i pathi poxaren yntrel himnakany C:\Users\narek\AppData\Local\Android\sdk 
+				kara nayev kariq lini android studioic google drivery qashel
+
+unity hubic amen versiayi hamar androidi toolery qashelu poxaren karanq prosty edit -> preferences -> external tools bajnic pathery tal
+
+heraxosi mej qashum enq "unity remote 5" appy u et appy bacac vichaqum editorum henc play tanq heraxosi vra kbaci :)
+
+Unity Editor
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+[SerializeField]                     // kereva miayn unity editorum
+private MyType obj;
+
+[Header("Movement Settings")]        // editori componentum vorpes vernagira erevalu
+[Tooltip("hushum.")]                 // hushuma linelu vorpes, yerb mkniky pahenq vran
+public AnimationCurve mouseSensitivityCurve = new AnimationCurve(new Keyframe(0f, 0.5f, 0f, 5f), new Keyframe(1f, 2.5f, 0f, 0f));   //compomemtum kstexci grafik
+
+public float rotationLerpTime = 0.01f;     // kstexci en qashovi dachikneric
+
+package manageri previewy miavnelu hamar -- edit + project settings + package manager + enable preview package 
+aynuamenayniv yete vorosh packagener chi perum cankum apa porci da anes --- add package from fit url -- https://forum.unity.com/threads/visibility-changes-for-preview-packages-in-2020-1.910880/
+
+System
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+// system back implementation  
+       if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKey(KeyCode.Escape))
+                Application.Quit();
+        }
+
+Shader
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+yete xndira linum, orinak yete manushakaguyn kam yesiminch zibil qarakusiner beri orinak particli jamanak, apa petqa prosty yntrel "Additive(soft)"
+
+yete petqa spriten vorpes texture tal, apa harmar en hetevjal shadernery ---  Unlit/Transparent, GUI/Text Shader
+
+Post Processing package
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+sra mijocov talis enq tarber effectner // petqa "Post-Processing layer" componenty kcenq camerayin + stexcenq layer vori vra azdelua es effecty + et leyery nshenq componentum + ayn obyekti vra vori vra uzum enq gorci effecty` tanq et layery heto tanq "Post-Processinf volume" componenty u effektner avelacnenq
+
+Collider
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+//ays funkcian kanchvuma yerb this-i colliderin inch vor hpuma linum ayl collideri koxmic // konkret es orinakum thisy getnina, collisiony parenta cuberi // voronq getnin kpnelov iraric arandznanalu en u cxven
+    private void OnCollisionEnter(Collision collision)    // collisiony henc obyektna vory hpvela // hierarchyum verabervuma ira childerin el
+    {
+        if (collision.gameObject.tag == "Cube")
+        {
+            for (int i = collision.transform.childCount - 1; i >= 0; i--)   // talisa childeri qanaky // sksum enq verjic qani vor collisioni mej exac objectneri kapy korelua parenti het u indexacian sxal kasxati qanzi parenti childery kqchanan
+            {
+                Transform child = collision.transform.GetChild(i);    // talisa collisiony hamapatasxan indexi childy
+                child.gameObject.AddComponent<Rigidbody>(); 
+                child.gameObject.GetComponent<Rigidbody>().AddExplosionForce(70f, Vector3.up, 5f);    // objectin talisa paytyuni effect
+                child.SetParent(null);      // xzum enq kapy parenti het
+            }
+            Destroy(collision.gameObject);    // jnjum enq
+        }
+    }
+collision.contacts[0].point // kta arajin hpumi coordinaty
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+Transform
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+// inspectorum transform componenti coordinatnery local coordinatnern en` ayn e` coordinaty parenti nkatmamp
+myTransformObject.Position // global coordinates
+myTransformObject.localPosition // local coordinates
+
+rotation
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+//unity-um rotationy ayl skzbunqova, u standart dzevery chhen ashxati qani vor ptuyti jamanak pttman arancqnern el hetn en frum, dra hamar chisht ptuyt talu hamar petqa`
+myTransform.rotation *= Quaternion.AngleAxis(ankyunyAstichanov, Vector3.right); // nkatenq vor "+="i poxaren "*="a, sa quaternioni arandznahatkutyunnerica
+mytransform.rotation *= Quaternion.AngleAxis(ankyunyAstichanov, Vector3.up); //kptti standart Y arancqi shurj
+
+myTransformObject.Rotate(0, speed * Time.deltaTime, 0); // pttuma aranqneri shurj // vorin inj arjenq tanq et ankyan tak kptti // sa chishta ashxatum miayn 1 arancqi shurj //orinak karanq kameran u luysy mi obyekti mej dnenq u et objecti transformi hamar es funkcian kanchenq // pttvir pttvir karusel
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+transform.position = Vector3.MoveTowards(oldPos, newPos, speed); ktexapoxi objektin speed chapov // updateum karanq kanchenq u plavni kgna objecty newPos
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+void Update
+{
+    transform.position = Vector3.Lerp(transform.position, endPoint, Time.deltaTime * 2)   // plavni kgna endPointi vra
+}
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+Rigidbody
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+//Rigidbodyn kara xaxi yntacqum lrvi, dra hamar petqa update anenq , ornak amen angam kinematic sarqenq hanenq
+myRb.velocity.magnitude // kta sharjman aragutyanvectori erkarutyuny
+
+Prefab
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+GameObject newCube = Instantiate(myPrefab, myPosition, Quaternion.identity) as GameObject;  //stexcuma prefaby isk verji "as Gameobject"y grum enq vor veragrumy karananq anenq
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+//UI prefab
+GameObject deleteBtn = Instantiate(deleteBtnPrefab); 
+deleteBtn.transform.SetParent(myParentGmObj, false);
+deleteBtn.GetComponent<Button>().onClick.AddListener(() => DeleteFromFavorites(deleteBtn)); // qani vor UI-i prefabin inspectric click-event tal chi linum, apa senc enq talis
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+Coroutine
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+//mexanizma vori mijocov hnaravora irakanacnel asixron kancher aranc multithreadingi :) // qani vor threadneri het  ashxately tanka nstum // bayc karanq nayev ayl thredner el ogtagorcenq Coroutinei mej, orinak asenq kodi vor hatvacy irakanacnenq ayl patoki mej vor glxavor` UI patoky chdandaxi
+https://habr.com/ru/post/216185/
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+private Coroutine showCubePlace;    
+void Start()
+    {
+        showCubePlace = StartCoroutine(ShowCubePlace());
+    }
+    IEnumerator ShowCubePlace()
+    {
+        while (true)
+        {
+            SpawnPositions(); // kanchuma funkcian
+            yield return new WaitForSeconds(1.2f); // kspasi 1.2 vayrkyan u eli kkatarvi // sra lavn ena vor thready chi qnum
+        }
+    }
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+UI
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+using UnityEngine.UI;
+// karanq google fontsic fonter qashenq texteri hamar
+firstWord <color"#000"Tower</color> // textum karanq senc grenq u mi bary urish guyn klini :)
+EventSystem.current.IsPointerOverGameObject() // yete any UI elementi sexmenq, sa klini true
+
+// TMPro yev ImputFiled componentnery ccriptic stanalu hamar`
+	using TMPro;
+	GetComponent<TextMeshProUGUI>();
+	TMP_InputField inputFiled;
+	
+scroll view           https://www.youtube.com/watch?v=hKtxfQ6zyAc&pbjreload=101&ab_channel=AlexanderSosnovskiy
+text scroll           https://www.youtube.com/watch?v=MWOvwegLDl0&feature=emb_logo&ab_channel=Brackeys
+sexmel, qashel ...    https://stackoverflow.com/questions/41391708/how-to-detect-click-touch-events-on-ui-and-gameobjects
+PointerEventData      https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.PointerEventData.html
+graphic raycast       https://docs.unity3d.com/2017.3/Documentation/ScriptReference/UI.GraphicRaycaster.Raycast.html
+show status bar       https://github.com/Over17/UnityShowAndroidStatusBar
+
+DOTween
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+//sa lav dvijoka unityi hamar vorov karum enq plavni sharjer anenq // lav poxarinicha lerp functiayin 
+myTransform.DOLocalMoveZ(neZPos, time) // kpoxi local coordinaty z arancqov time jamanakum
+
+Random
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+// sa unityEnginei randomna voch te standart
+Random.insideUnitSphere // kta 1 sharavix gndi mej ynkac patahakan vector
+
+PlayerPrefs
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+// user settingnern en voronq aftomat save en linum fileum 
+        if(PlayerPrefs.GetString("music") == "No") // yete soundy anjataca // "musicn" u "no"-n aystex kamayakan barer en
+        {
+            PlayerPrefs.SetString("music", "Yes"); // save enq anum vor musicy miacaca aysuhet
+            GetComponent<Image>().sprite = musicOn; // poxum enq icony
+        }
+        else
+        {
+	    GetComponent<AudioSource>().Play(); // playa anum soundy vory kcvaca thisin
+            PlayerPrefs.SetString("music", "No"); // save enq anum vor musicy anjataca aysuhet
+            GetComponent<Image>().sprite = musicOff;
+        }
+
+Input
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+        if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
+        {
+            #if !UNITY_EDITOR                                     //preprocessing // ktexadri kody yete pajmany chishta
+                if (Input.GetTouch(0).phase != TouchPhase.Began)
+                    return;
+                touchPos = Input.GetTouch(0).position;
+            #else
+                touchPos = Input.mousePosition;
+            #endif
+
+            Ray ray = Camera.main.ScreenPointToRay(touchPos);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))  // yete touch kam click enq arel collider unecox gameobjectin
+                Debug.Log(hit.transform.gameObject.name);
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+Fonts
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+unity-n hayeren fonti xndir uni, inj font el dnenq editorum chi bacelu, bayc karanq orinak arial font familyn qashenq tanq textin u mer uzac texty orinak wordic nuyn fontov
+grenq u copy past anenq:
+text mesh proyi font sarqelu hamar petqa 
+			windows -> TextMeshPro -> Font Asset Creator
+			Source font file --------- mer fonty
+			character set
+				unicode range hex     ------ talis enq mer uzac sinvolneri unicodei diapazony, orinak 0021-007E,0410-0451,0530-058F (angleren u sinvolner, ruseren, hayeren)	
+				custom range  -------------- eli verevini nman talis enq bayc 10akan hamakargov
+			sexmum enq generate font atlas u taky kberi te qanisic qanisna yndgrkvel u nkarov cuyc kta, save enq anum u verj
+//yete generatingi jamanak missinga talis, porci custom character yntrel yev grel anhrajejt simvolnery
+
+Mesh
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+Unityn optimizaciayic yelnelov chi tesnum meshi nersi koxmy (ayd tvum mesh collidery), u yete uzum enq meshi nersy vorpes collider ogtagorcel, apa karanq runtime colliderov gndikner sarqenq
+  meshi vertexneri coordinatnerov u stacvav marminy runtime prefab sarqenq u heto ogtagorcenq
+    public GameObject gund;
+    public GameObject ramka;
+    void Start()
+    {
+        Mesh mesh = GetComponent<MeshFilter>().sharedMesh;
+        var vertices = mesh.vertices; // vorpessi error chta apa petqa inspectorum "read/write"-n miacrac lini
+        for (int i = 0; i < vertices.Length; i++)
+        {
+            GameObject x = Instantiate(gund, vertices[i] * 60, Quaternion.identity); // bazmapatkel enq 60-ov qani vor mesh-is scalen 60a tvac exel
+            x.transform.SetParent(ramka.transform);
+        }
+    }
+
+$$$  yete skinned mesh renderery buildic heto chi erevum, petqa neshi read/vrite settingy miacnel
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+// kody stanuma realtime meshi vertexnern u popoxum
+            Mesh mesh = new Mesh();
+            GetComponent<SkinnedMeshRenderer>().BakeMesh(mesh);
+            Vector3[] positions = mesh.vertices;
+		.....
+            mesh.vertices = positions;
+            GetComponent<SkinnedMeshRenderer>().sharedMesh = mesh;
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+Read File
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+//nax petqa mer fayly assets/resurces - um lini // yete uzum enq ogtagorcenq exceli pes axyusakov fayl, apa haramra ogtagorcel .csv formaty
+
+string path = "TextFilesDir/myFile"; // "TextFilesDir"-y anmijapes "Resources" papkayuma, isk fayli formaty petq chi grel
+TextAsset file = Resources.Load(atomsInfoFilePath, typeof(TextAsset)) as TextAsset;
+string[] lines = file.ToString().Split('\n');
+
+
+
+TextMeshPro
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+texti dashtum spritener avelacnelu hamar --- https://learn.unity.com/tutorial/textmesh-pro-sprite-assets#5f5f1078edbc2a0020aa64d4

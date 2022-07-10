@@ -1,0 +1,96 @@
+
+7376
+
+sudo apt-get install <...> ---------- insalla anum packagen
+sudo apt-get uptade ----------------- ...
+sudo apt-get install aptitude ------- installa anum plituden vory apt-geti nman eli 
+                                      install anelu commanda, bayc aveli pradvinuti
+sudo aptitude safe-upgrade ---------- asum enq inj ka chka update ara, bayc zguysh, vor voch mi ban chavires
+
+ls -------------------------- tpuma faylery
+ls -al kam ls -l ------------ aveli manramasna tpum 
+ls -a ----------------------- ktpi nayev taqnvac faylery
+chmod ... ------------------- permissiony poxelu hamara fayli kam folderi
+grep ... -------------------- fayleri yev folderneri voronman hamar
+sort ... -------------------- sortavorman hamara
+ping ... -------------------- hosti het kapvac
+ls ad*.txt ------------------ ktpi "ad"-ov sksvox yev ".txt"-ov verjacox fayleri listy
+
+> text.txt   ---------------- kjnji asyd fayli parunakutyuny
+
+cat anun.(format)  ---------- tpuma fayli parunakutyuny
+cat > anun.(format) --------- kstexci "anun" fayly yev kspasi inputin, inputy avarteluc heto
+                              petq e "ctrl"-y sexmac vijakum sexmel "d"
+cat >> anun.(format) -------- kspasi inputi arden goyutyun unecox fayli hamar, voryn el kavelacni
+                              dra parunakutyan verjic
+cat file1 > file2 ----------- kjnji file2-i parunakutyuny u kgri ayntex file1-i parunakutyuny
+cat file1 >> file2 ---------- file2=file2+file1 :)
+cat f1 f2 f3 > f4 ----------- kstexci(yete chka) f4 u f4=f1+f2+f3
+cat f1 f2 f3 | sort> f4 ----- kani verevi gracy u f4-i parunakutyuny ksortavori (a_q)
+cat -n song.txt  ------------ ktpi fayly toxeri hamarnerov handerc
+cat more | less ------------- yerb fayli parunakutyunn meca shat
+
+cp source destination ------- source-n copy kani destination anunov
+mv old_file new_file -------- anuny kpoxi fayli
+rm filename ----------------- kjnji fayly (karanq mi qani fayl irar kox grenq u jnjenq)
+rmdir dirname --------------- kjnji foldery
+wc filename ----------------- ktpi fayli toxeri, bareri yev symbolneri qanaky
+mkdir dirname --------------- kstexci directory
+mkdir -p /tmp/amrood/test --- kstexci bolor ays folderneri hirarcin
+head -N file1   ------------- ktpi file1-i arajin N toxery
+tail -N file1   ------------- ktpi file1-i verjin N toxery
+
+sed G a.txt  ---------------- ktpi a-n` amen toxic heto avelacnelov 1 datark tox
+sed 'G;G' a.txt ------------- ktpi a-n` amen toxic heto avelacnelov 2 datark tox
+sed '/^$/d;G' a.txt --------- ktpi a-n` jnjelov datark toxern u amen toxic heto avelacnelov 1 datark tox
+sed '/ad/{x;p;x;}' a.txt ---- "ad" bari handipeluc dra vra gic(datark tox) kdni
+sed '/ad/G' a.txt ----------- "ad" bari handipeluc dra tak gic(datark tox) kdni
+sed 's/^/     /' a.txt ------ ktpi amen toxic araj etqan bacat dnelovs
+sed = a.txt | sed 'N;s/\n/\t/' -------------------------------- ktpi parunakutyuny hamarakalvac toxerov u tabulaciayov
+sed = a.txt | sed 'N; s/^/     /; s/ *\(.\{4,\}\)\n/\1  /' ---- verevini nmana prosty tverner el tabulaciayov
+sed '/./=' a.txt | sed '/./N; s/\n/ /'   ---------------------- khamarakali miayn voch datark toxery
+sed '5d' a.txt -------------- ktpi aranc 5-rd toxi
+sed ‘$d’ a.txt -------------- ktpi aranc verjin toxi
+sed '3,5d' a.txt ------------ ktpi aranc 3_5 toxeri
+sed '2,$d' a.txt ------------ ktpi minjev 2-rd toxy
+sed '/life/d' a.txt --------- ktpi aranc ayn toxeri voronc mej ka "life" artahaytutyuny (tekuz bari mej)
+sed '3~2d' a.txt ------------ ktpi aranc 3-rd toxic sksac amen 2-rd toxi
+sed '/easy/,+2d' a.txt ------ ktpi jnjac ayn toxy vorum ka "easy" artahaytutyuny yev + yerku tox dranic nerqev
+sed '/^$/d' a.txt ----------- ktpi aranc datark toxeri
+sed -i '/^#/d;/^$/d' a.txt -- ktpi aranc ayn toxeri, voronq sksvum en "#" nshanov
+sed -n '2,5p' a.txt --------- ktpi 2_5 mijakayqi toxery
+sed '2,4d' a.txt ------------ ktpi amboxj fayly baci nshvac mijakayqic
+sed -n '4'p a.txt ----------- ktpi 4-rd toxy
+sed -n '$'p a.txt ----------- ktpi miayn verjin toxy
+sed -n '3,$'p a.txt --------- ktpi 3-rd toxic sksac
+sed -n /every/p a.txt ------- ktpi ayn toxery voroncum ka "every" artahaytutyuny
+sed -n '/every/,5p' a.txt --- verevini pes, prosty minjev 5-rd toxn exac hamynknumnery 
+sed -n '1,/every/p' a.txt --- 1-ic sksac ktpi mi njev ayn toxy, vorum ka "every" artahaytutyuny, hakarak depqum` amboxj fayly
+sed -n '/learn/,+2p' a.txt -- ktpi hamynknumic sksac minjev hajord 2 toxery
+sed 's/life/leaves/' a.txt -- ktpi "life"-i arajin hamynknumy darcrac "leaves"
+sed 's/to/two/2' a.txt ------ replace kani 2-rd hamynknumy
+sed 's/life/learn/g' a.txt -- replace kani bolor hamynknumnery
+sed 's/to/TWO/2g' a.txt ----- 2-rd toxic sksac replace kani
+sed -n 's/to/TWO/p' a.txt --- ktpi replace arac toxery
+sed '3 s/tt/TT/' a.txt ------ replace kani 3-rd toxi hamynknumy
+sed '2,5 s/to/TWO/' a.txt --- 2_5 replacea anum
+sed '2,$ s/to/TWO/' a.txt --- 2-ic sksac minjev verj replacea anum
+sed 's/  */ /g' filename ---- replacea anum mi qani spacenery 1 spacei
+sed -i '5!s/tt/TT/' a.txt --- replacea anum sax baci 5-rd toxic
+
+
+vim anun.(format)  ---------- kstexci (yete chka) "anun" fayly yev kpaci VIM editory nranum popoxutyunner
+                              katarelu hamar. "i" + changes + ":wq"  
+cd~  ------------------------ beruma im home directoryn
+pwd ------------------------- tpuma current directory-n
+pacman -S doxygen  ---------- install kani doxygeni packagenery
+./anun.format  -------------- scripty ashxatacnelu hamara
+sh anun.format -------------- ayl tarberak scripty ashxatacnelu hamar
+
+echo "$(date) $(ls -1 | wc -l)" >> log.txt ------ ktpi yntacik amsativn u jamy log.txt faylum
+
+find ./ -type d -------------- ktpi bolor foldernery (dir-y karanq tanq/-ic heto)
+find ./ -type f -------------- ktpi bolor faylery 
+
+chmod +w file1 --------------- kawelacni write priority
+chmod -w file1 --------------- khani write priorityn

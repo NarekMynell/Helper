@@ -1,0 +1,205 @@
+https://www.tutorialspoint.com/unix/unix-special-variables.htm ------ amen inj unix-i masin :)
+#! ----------------------------- sa kochvum e shebang 
+#!/bin/bash   ------------------ kashxati tvyal (bash tipi) scripty, ir miji scriptakan hramannerov
+#!/bin/bash -e ----------------- yete inj vor sxal arajana (veradarcni 0) scripty miangamic dadarecni ir ashxatanqy
+#!/bin/bash -v ----------------- ashxatanqi yntacqum tpuma scripty
+#!/bin/cat  -------------------- yerb ashxatacnenq scripty, ktpi fayli parunakutyuny
+#!/bin/env -S command arg1 arg2 ...    --------- mi qani argumentani hramanner ogtagorcelu format. or`
+#!/bin/env -S sed -n 5p -------- orinak "sed" hramanov ktpi fayli parunakutyan 5-rd toxy
+ps | grep $$  ------------------ cuyca talis aktiv scripty
+# | ";"..." ' " ---------------- mek toxanoc yev mekic aveli toxanoc comment
+
+var=tutak
+echo '$var text `date`+%m/%d`' - ktpi "$var text `date +%m/%d`"
+echo "$var text `date`+%m/%d`" - ktpi "tutak text 22/06"
+echo $$ ------------------------ ktpi yntacik shelli ID-n
+echo $0 ------------------------ ktpi yntacik shelli anuny
+echo $# ------------------------ scriptin tvac argumentneri qanaky
+echo $? ------------------------ verjin katarvac hramani statusy
+echo -n ...  ------------------- hajord toxy nor tox chi ijacni
+echo note > myfile ------------- note-n klcni goyutyun unecox fayli mej(yete goyutyun chuni , apa >> senc piti grvi)
+                                 or`  echo text 1 >> t.txt ;  `ls` >> t.txt;  $var > t1.txt
+echo "abcdefghi" | cut -c2-6 --- bary kktri toxnelov 2_6 masy 
+echo-um 
+        \n --------------------- nor tox
+        \t --------------------- horizonakan tabulacia
+        \v --------------------- uxxahayac tabulacia 
+        \c --------------------- toxi avarti kod
+echo "my name is ${NAME}cho" --- {} pakagcery yerkimastutyuny bacarelu hamar en, vor karananq popoxakanin kpac ayl text grenq
+echo $VAR "now to $VAR" -------- yete VAR='aa   bb' apa arajiny ktpi mi bacakov, isk ""-neri mijiny nuynqan bacakov
+echo -e ... -------------------- ayd toxum tuyla tali haskanal bolor hatuk nshanakutyan '\'-nery
+echo `pwd` --------------------- `` ays chakertneri mej exacnery kaskanuma vor key-word en u ktpi vorpes hraman
+
+${MYVAR:3} --------------------- # Remove the first three chars (leaving 4..end)
+${MYVAR::3} -------------------- # Return the first three characters
+${MYVAR:3:5} ------------------- # The next five characters after removing the first 3 (chars 4-9)
+
+wc -l < myFile ----------------- ktpi myfile-i toxeri qanaky, ays depqum ayn chi haskanum vor faylica kardum
+wc -l myFile ------------------- verevini handep tarberutyuny naya vor sa giti vor myFile-ica kardum, so ktpi nayev "myFile"
+
+command1 > /dev/null ----------- yete chenq uzum tpi or` ls > /dev/null     https://www.tutorialspoint.com/unix/unix-io-redirections.htm
+
+read PERSON -------------------- PERSON popoxakanin inicilizacia kanenq inputov
+read -p 'Enter a : ' a  -------- miangamic karanq tpenq u spasenq inputi :)
+
+wc -l < <filename> --------------- ktpi toxeri qanaky
+tac file ------------------------- ktpi hakarak
+echo "abcdefghi" | cut -c2-6 ----- bcdef
+
+
+variable ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\ 
+                                 popoxakannery (a..q, A..Q, 0..9, _)(poqratarery yndunvac chi ogtagorcel) 
+                                 miangamic skzbnarjeqavorvum en (or VAR='hello' , = nshany dzaxic piti partadir kpac lini popoxakanin,
+                                 isk ajic kara kpac chlini yete hatuk ban enq veragrum)
+                                 isk arden iranc dimeluc ogtagorcum enq '$' nshany, or` $MY_VAR
+readonly var1="indz chpoxeq" --- aysinqn constanta, iran aylevs urish arjeq chenq kara tanq
+${Var: -word} ------------------ yete Var-y nulla kam haytararvac chi apa Var-y kpoxarini word-ov
+${Var: = word} ----------------- yete nulla kam haytaravac chi, apa Var=word
+${Var :? Message} -------------- yete nulla kam haytararvac chi, apa ktpi Message-y
+${Var: + word} ----------------- yete Var-i het amen inj kargina, apa Var-y kpoxarini word-ov
+
+unset Var ---------------------- kjnji Var popoxakany
+VAR1='ls' ---------------------- kveragri "ls"
+VAR2= 'ls' --------------------- kveragri 'ls' hramanov tpac listy (yete =-ic heto bacat ka)
+
+ARRAY ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+NAME[0]="Zara"
+NAME[1]="Qadir"
+NAME[2]="Mahnaz"
+set -A array_name v1 v2 ... vN ----- haytararel yev skzbnarjeqavorel
+array_name=(value1 ... valuen) ----- haytararel yev skzbnarjeqavorel
+${array_name[index]} --------------- elementin dimelu hamar
+${array_name[*]} ------------------- bolor arjeqnerin dimum, or` echo "ktpi bolor andamnery: ${array_name[*]}"
+${array_name[@]} ------------------- bolor arjeqnerin dimum
+
+MATEMATIKAKAN GORCOXUTYUNNER |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+# mi tarberakum vorpeszi haskana petq e voxj gorcoxutyuny grel `` chakertneri mej, or  VAR=`expr 10 - 2`  kam  VAR=`expr $a + $b`
+$((a+b))  kam  `expr $a + $b` ----------------- gumarum
+$((a-b))  kam  `expr $a - $b` ----------------- hanum
+$((a*b))  kam  `expr $a \* $b` ---------------- bazmapatkum
+$((a/b))  kam  `expr $a / $b` ----------------- bajanum
+$((a%b))  kam  `expr $b % $a` ----------------- modulov bajanum (kta mnacordy)
+((++a)) --------------------------------------- increment
+((--a)) --------------------------------------- decrement
+
+BOOLEAN gorcoxutyunner ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+if(( $a==$b )) then ... ----------------------- yete chishta ... kan bolor hamematman dzevery
+if(($a == "true" & $b == "true" )) then ... --- yete yerkusn el chisht en ... kan bolor dzevery
+
+read -p 'Enter file name : ' FileName --------- spasuma vor grenq fayli anuny
+if [ -b $FileName ] then ---------------------- yete ayn hatuk fayla apa true
+-c -------------------------------------------- true yete simvolayin hatuk fayla
+-d -------------------------------------------- stuguma tvyal foldery ka te che
+-e -------------------------------------------- stuguma tvyal fayly ka te che
+-f -------------------------------------------- stuguma ardyoq sovorakan fayla 
+-r -------------------------------------------- stuguma read access uni te che
+-w -------------------------------------------- stuguma write access uni te che
+-x -------------------------------------------- stuguma execute access uni te che
+-s -------------------------------------------- stuguma fayli chapy, yete >0 veradarcnuma true
+
+STRINGNERI BOOLEAN HRAMANNER |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+= --- [ $a == $b ] --------------------- yeta havasar en
+!= -- [ $a != $b ] --------------------- yete havasar chen
+-z -- [ -z $a ] ------------------------ yete yerkarutyuny 0-a
+-n -- [ -n $a ] ------------------------ yete yerkarutyuny 0 chi
+str - [ $a] ---------------------------- yete a-n datark chi
+
+PAYMANI BLOCKNER |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+if (...) then .... fi                                  yete then-y if-i toxum enq grum, apa iranic araj ;-y petqa dnenq
+if (...) then .... else .... fi
+if (...) then elif(...) then .... else .... fi  
+
+case  $variable-name  in
+                pattern1)       
+                    ...
+                    ;;
+                pattern2 | pattern3)
+                    ...
+                    ;;            
+                patternN)       
+                    ...
+                    ;;
+                *)              
+          esac 
+
+LOOPS ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+INPUT_STRING=hello
+while [ "$INPUT_STRING" != "bye" ]
+do
+  echo "Please type something in (bye to quit)"
+  read INPUT_STRING
+  echo "You typed: $INPUT_STRING"
+done
+
+
+
+for var1 in 1 2 3
+do
+   for var2 in 0 5
+   do
+      if [ $var1 -eq 2 -a $var2 -eq 0 ]
+      then
+         break 2
+      else
+         echo "$var1 $var2"
+      fi
+   done
+done
+
+
+NUMS="1 2 3 4 5 6 7"
+for NUM in $NUMS
+do
+   Q=`expr $NUM % 2`
+   if [ $Q -eq 0 ]
+   then
+      echo "Number is an even number!!"
+      continue
+   fi
+   echo "Found odd number"
+done
+
+FUNCTIONS ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\
+
+Fname () {
+t=$1 // t-in kveragri arajin argumenty
+return 10
+ } 
+
+kanchely`
+Fname arg1 arg 2
+aa=$? //a-in kveragri return exacy
+____________________________________________
+#yete q-n aveli hina apa t-n copy kani q-um
+#kan nayev -nt yev -ef
+if [ q.txt -ot t.txt ]; then
+    cp -f t.txt q.txt
+fi
+_______________________________________________
+#kancni folderi miji fayleri vrayov
+for anun in dirName/*; do
+   echo "$()"
+____________________________________________
+#kancni fayli toxeri vrayov
+while read p; do
+  echo "$p"
+done <peptides.txt
+__________________________________________________
+#ktpi miayn avel faylery
+diff -u A1 A2 | grep -E "^\+"
+___________________________________________________
+#fayli toxeri vrayov kgna u dranov kskzbnarjeqavori arrayy
+#amen elementin kta heratakan toxy sksac 2-rd symbolic
+while read line; do
+    DIR_1_FILES[$i]=$(echo $line | cut -c2-)
+    ((++i))
+done < first_dir_files_temp.txt
+_____________________________________________________________
+ktpi hertov bolor toxery bayc hakarak
+tac "$LOG_FILE" | while read x; do echo $x; done
