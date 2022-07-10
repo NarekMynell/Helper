@@ -1,0 +1,20 @@
+vscode-n compilator chuni
+gpp_n C-i compilatorna
+g++-y C++ -inna
+ashxatacnelu hamar piti qashen MinGw_n
+sistemayi mijic pathy tanq 
+heto msys-ov kam vscode-i terminalov mtnenq en papken
+vori mej unenq sarqac mer anun.cpp fayly yete exe-n der chi
+sarqvel apa grenq.
+g++ cppFileName.cpp  // ardyunqum kstexcvi exe-n 
+vorn el ashxatacnum enq
+./stexcvacExeFayliAnun.exe
+
+//////////////////////////////////
+terminalov karanq nayev kod grenq
+da arvuma vim-ov
+grum enq orinak
+vim klor.cpp
+bacvuma vim-y. "i"+"kody"+"esq"+":"+"wq"
+arden stecvec cpp fayly
+g++ klor.exe // kstexcvi exe fayly

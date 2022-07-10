@@ -1,0 +1,2 @@
+std::cout.precision(5);  ______________________ storaketic heto chshtutyuny
+std::cout<<std::fixed;   ______________________ ketikov tveri nerkayacman dzevy , ays yev verevi toxerov formaty poxvuma sranic nerqev amboxj kodum

@@ -1,0 +1,39 @@
+
+italic    ----------- *aaa* kam _aaa_  (chishty bayc *_na)
+hold      ----------- **aaa** kam __aaa__
+heading   ----------- ka 6 makardak, toxi skzbic dnum enq # ## ### #### ##### ######
+                      ("#"_neri koxqic dnel space, tenc lava :) )
+                      ka 2 makardak, 1.toxi takic ========, 2.toxi takic -------
+paragraph ----------- kan tarber dzever. or. 2 kam aveli space verjum kam "\" nshni ogtagorcum, 
+                      sakayn bolor xmbagrichnery support chen anum da, kam el ynterneli chi
+                      usti haramara ogtagorcel HTML-akan "<br>"-y   (chishta aranc mi mat xorqicna :) )
+blockquotes---------- toxi skzbic dnum enq ">" nshany, isk mejberman mej mejberum grelu hamar karanq
+(mejberum)            2 kam aveli ">" dnel, or. ">>", (siruna amen toxi skzbic dnel nshany)
+links     ----------- yete uzum enq linky nuyn kerp yereva, apa` "<https://github.com>"
+                      yete uzum enq linky chereva, ayl voreve hamapatasxan text, apa` "[MyText](URL)"
+                      qani vor linkery karan shat yerkar linen u geshacnen mer kody, apa karox enq dranq 
+                      tal kodi verjum. kodi mej grum enq "[MyText][LinkName]", isk verjum "[LinkName]:URL"
+images    ----------- nuyn linki dzevov, parzapes "!" nshanov, or.`  "![MyText](ImageURL)
+vernagrov catk ------ vorpeszi cankum vernagri vra sexmeluc ijni ayd entanajiny, anhrajesht e canky nkaragrel hetevyal
+                      kerp. "['Head Name'] (#'head'-'name')" u yerb ksexmenq sra vra, ayn yntacik ejic kgtni "HeadName" anunov
+                      vernagir kam yentavernagir yev kcucadri ayd masy: N
+horizontal rules----- grel 3 kam aveli "-", "_" kam "*" , or.` "_______________"
+(horizonakan gcer)
+
+codes    ------------ coder grelu yev arandznacnelu hamar codi bloki skzbic yev verjic dnum enq "```" kam "~~~"
+list     ------------ tverov talu hamar grum enq "1." u xmbagrichy avtomat takic kberi "2." ...
+                      chamarakalac talu hamar prosty grum enq "+", "-" kam "*" : Karanq nayev listi mej list
+                      avelacnenq. 
+signs    ------------ vorosh nshanner KeySign_ner en, so dranq chisht grelu hamar grum enq "\"-ic aj, or.` "\*" 
+                      |	. ! - +	# () []	{} _ * ` \ ``` ~~~
+tab      ------------ ogtagorcelov "tab"_y karox enq arandznacnel hatvac, vortex grvum en sovorakan texter
+                      or.` "# Head" artahajtutyuny khaskacvi vorpes sovorakan text: Stexcvac dashty parunakum 
+                      e nayev scrollingi hamakarg
+
+
+
+
+
+
+
+
